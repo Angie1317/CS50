@@ -1,0 +1,166 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.form-container, .parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-width: 500px;
+}
+
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 40px;
+    width: 90%;
+    height: 45px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.searchbar:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 11px rgb(236, 236, 236);
+    transform: scale(1.02);
+
+}
+
+.searchbox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.searchbox>input {
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    margin: 10px;
+}
+
+.searchbox>input:hover {  
+    cursor: text;
+}
+
+
+.searchbox>input:focus {
+    display: flex;
+    border: 2px solid rgb(232, 89, 0);
+    opacity: 1;
+    width: 90%;
+    height: 30px;
+    padding: 2px;
+    margin: 40px;
+    font-size: 18px;
+
+}
+
+.searchbox>input:focus::placeholder{
+    color: transparent;
+}
+
+.google{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.image {
+    margin-bottom: 20px;
+    width: 300px; 
+}
+
+
+.childs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 150px;
+    margin: 5px;
+}
+
+.btn input{
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    border-color: rgb(243, 243, 243);
+    box-shadow: none;background-color: rgb(243, 243, 243);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.btn input:hover{
+    cursor: pointer;
+    outline: none;
+    border-color: lightgrey;
+    box-shadow: 0 0 11px rgb(215, 213, 213);
+    transform: scale(1.02);
+}
+
+
+.links{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: flex-end;
+    margin: 10px;
+}
+
+.links a{
+    outline: none;
+    text-decoration: none;
+    border: 0;
+    margin: 10px;  
+}
+
+.links a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
